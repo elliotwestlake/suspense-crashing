@@ -1,6 +1,6 @@
 export const fetchUser = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users/1", {
-    cache: "no-store",
+    cache: "no-cache",
   });
 
   await new Promise((resolve) => setTimeout(resolve, 3000));
